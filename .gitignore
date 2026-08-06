@@ -1,0 +1,28 @@
+# --- LEAN / QuantConnect ---
+# Market data is large and re-downloadable; never commit it.
+data/
+# Backtest output is regenerated on every run.
+backtests/
+# LEAN credentials and local CLI state.
+lean.json
+.idea/
+.vscode/
+
+# --- Book drafts / annotations ---
+# Manuscript PDFs live in ../pdfs/, outside git. Belt and braces.
+*.pdf
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# --- Archives ---
+*.zip
+
+# --- OS ---
+.DS_Store
+Thumbs.db

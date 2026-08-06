@@ -1,0 +1,26 @@
+# Math 585 配套代码的运行环境。
+#
+# 这份文件是手写的、跨平台的,不是 `conda env export` 的输出 —— export 出来的
+# 文件带 Windows 专属的 build string 和全部传递依赖,在 Mac 上装不上。这里只
+# 写直接依赖,其余交给 pip 解析。
+#
+# 复现:
+#   conda env create -f environment.yml
+#   conda activate qc
+#   lean --version
+#
+# 已在 Windows 11 + miniconda 上验证:Python 3.11.15 / lean 1.0.227。
+name: qc
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # QuantConnect LEAN CLI —— 本地回测、云端同步都靠它。
+      - lean==1.0.227
+      # 只给 IDE 用的类型存根,让 QCAlgorithm 的 API 能自动补全。
+      - quantconnect-stubs==17978

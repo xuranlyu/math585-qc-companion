@@ -1,10 +1,11 @@
 # 索引
 
-> **章号以书稿 v5.1 为准。书稿仍在修改中,章节会继续前移或调整,所以目录名
+> **书稿版本及章号以各行标注为准。书稿仍在修改中,章节会继续前移或调整,所以目录名
 > 一律不带章号 —— 请以本表的"书里位置"一列为准,不要从目录名推断章节。**
 
 | 项目 | 书里位置 | 演示什么 | API 状态 | 跑通 | 备注 |
 | --- | --- | --- | --- | --- | --- |
+| [conditional-alpha](conditional-alpha/) | v5.7 Ch5 / Alpha appendix | 条件期望、alpha、残差与信息的价值 | QuantBook + numpy/pandas/matplotlib | 本地与 QC Research 已运行；公开分享复制已验证 | 合成数据教学实验，非策略业绩 |
 | `sma-crossover` | v5.1 待确认 | | | | |
 | `hello-algo` | | | | | `lean project-create` 的默认模板,未改动 |
 
@@ -15,5 +16,6 @@
 - **演示什么** —— 这个例子想说明的概念。
 - **API 状态** —— 书里的写法和当前 QuantConnect API 的差异程度。书稿里多为旧版
   PascalCase,现在的 Python API 是 snake_case,详见 [QC_API_NOTES.md](QC_API_NOTES.md)。
-- **跑通** —— 本地 `lean backtest` 是否成功,以及结果是否和书里一致。
+- **跑通** —— 注明实际验证环境（本地、QC Research 或 LEAN backtest），以及结果是否符合实验预期。
 - **备注** —— 迁移中遇到的坑、和教授讨论的结论。
+

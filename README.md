@@ -7,6 +7,12 @@ Duke Math 585 (Algorithmic Trading) 教材的**配套代码仓库**。教授书�
 
 这里放的是**教学演示代码**,不是生产策略。
 
+## 先试一个读者实验
+
+[Alpha 与条件期望](conditional-alpha/)（v5.7 Ch5）：15 分钟的交互 notebook。
+在实验页面点击 **Run in QuantConnect**，复制到自己的账户后打开 `research.ipynb`、Run All。
+可以修改 benchmark、概率和信息分组，观察 alpha、残差和预测误差。
+
 ## 命名规则
 
 每个演示放在一个独立文件夹里,**只用主题 slug,不带章号**:
@@ -57,3 +63,4 @@ lean --version
 
 `data/`(LEAN 市场数据)、`backtests/`(回测输出)、书稿 PDF。
 PDF 统一放在 `../pdfs/`,那个目录不受任何 git 管理。
+
